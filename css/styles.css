@@ -131,33 +131,111 @@ h2 {
   height: 20px;
   width: 20px;
   border-radius: 50%;
-    box-shadow: 0px 0px 0px 4px var(--secondary-color);
-    position: relative;
-    left: -7px;
-    top: 50px;
-    background-color: #fff;
+  box-shadow: 0px 0px 0px 4px var(--secondary-color);
+  position: relative;
+  left: -7px;
+  top: 50px;
+  background-color: #fff;
 }
-.circle-in{
+.circle-in {
   height: 10px;
   width: 10px;
-  background-color:var(--secondary-color);
+  background-color: var(--secondary-color);
   position: relative;
   top: 4.5px;
-  left:4.5px;
+  left: 4.5px;
   border-radius: 50%;
 }
 /* skills */
 
-.skills .bar{
-background-color: #fff;
-height: 15px;
+.skills .bar {
+  background-color: #fff;
+  height: 15px;
 }
-.skills .in-bar{
-height: 15px;
-background-color: var(--secondary-color);
-width: 75%;
+.skills .in-bar {
+  height: 15px;
+  background-color: var(--secondary-color);
+  width: 75%;
 }
-.skills h1{
-text-align: center;
-width: 100%;
+.skills h1 {
+  text-align: center;
+  width: 100%;
+}
+
+/* contact */
+
+/* .contact .grid :nth-child(4) {
+  grid-column: 1 / span 3;
+} */
+
+/* Media queries */
+/* Tablet and under */
+@media (max-width: 768px) {
+  .grid,
+  .showcase .grid,
+  .about .grid {
+    grid-template-columns: 1fr;
+    /* grid-template-rows: 1fr; */
+  }
+  .showcase,
+  .about h1,
+  .about button {
+    text-align: center;
+  }
+  .showcase img,
+  .about img {
+    margin: 0 auto;
+    height: 400px;
+    width: 400px;
+  }
+  .h1 {
+    text-align: center;
+  }
+}
+/* phone */
+@media (max-width: 500px) {
+  .grid,
+  .skills .grid,
+  .contact .grid {
+    grid-template-columns: 1fr;
+  }
+  .flex {
+    flex-direction: column;
+  }
+  .navbar {
+    height: 200px;
+  }
+  .navbar .flex {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+  .navbar,
+  .showcase,
+  .education,
+  .about,
+  .skills,
+  .footer,
+  .contact {
+    padding: 0 10px;
+  }
+  .navbar .nav li {
+    padding: 0 5px;
+  }
+  .showcase img,
+  .about img {
+    height: 50%;
+    width: auto;
+    padding: 0;
+    margin: 0;
+  }
+  .showcase{
+  padding: 0;
+  margin: 0;
+  height: auto;
+  }
+  .card{
+  margin: 10px 0;
+  }
 }

@@ -246,11 +246,14 @@ padding-left: 2rem;
 input{
  border: none;
  border-bottom: 2px solid var(--secondary-color);
+  border-top: 2px solid var(--secondary-color);
  border-radius: 20px;
  height: 35px;
  width: 100%;
  font-size: 16px;
  padding: 0 15px;
+ font-size: 1rem;
+ font-weight: 100;
 }
 input:focus{
 outline: none;
@@ -259,11 +262,13 @@ outline: none;
 textarea{
  border: none;
  border-bottom: 2px solid var(--secondary-color);
+ border-top: 2px solid var(--secondary-color);
  border-radius: 20px;
- height: 35px;
  width: 100%;
  font-size: 16px;
  padding: 0 15px;
+ font-size: 25px;
+ resize: none;
 }
 textarea:focus{
 outline: none;
