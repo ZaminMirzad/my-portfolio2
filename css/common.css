@@ -120,7 +120,7 @@
   font-size: 4rem;
 }
 
-.text-center {
+.t-center {
   text-align: center;
 }
 
@@ -207,6 +207,13 @@
   padding: 4rem 0;
 }
 
+.pl-1{
+padding-left: 1rem;
+}
+.pl-2{
+padding-left: 2rem;
+}
+
 .p-1 {
   padding: 1rem;
 }
@@ -225,4 +232,45 @@
 
 .p-5 {
   padding: 4rem;
+}
+.b {
+  font-weight: 600;
+}
+.b-2 {
+  font-weight: 700;
+}
+.b-3 {
+  font-weight: 800;
+}
+/* form */
+input{
+ border: none;
+ border-bottom: 2px solid var(--secondary-color);
+ border-radius: 20px;
+ height: 35px;
+ width: 100%;
+ font-size: 16px;
+ padding: 0 15px;
+}
+input:focus{
+outline: none;
+}
+
+textarea{
+ border: none;
+ border-bottom: 2px solid var(--secondary-color);
+ border-radius: 20px;
+ height: 35px;
+ width: 100%;
+ font-size: 16px;
+ padding: 0 15px;
+}
+textarea:focus{
+outline: none;
+}
+
+.sticky{
+   position: fixed;
+   top: 0;
+    z-index: 1000000;
 }
